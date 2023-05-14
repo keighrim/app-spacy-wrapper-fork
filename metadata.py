@@ -38,4 +38,4 @@ def appmetadata() -> AppMetadata:
 # DO NOT CHANGE the main block
 if __name__ == '__main__':
     import sys
-    sys.stdout.write(appmetadata().json(indent=2))
+    sys.stdout.write(appmetadata().jsonify(pretty=True))
