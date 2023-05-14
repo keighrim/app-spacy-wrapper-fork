@@ -45,7 +45,7 @@ jobs:
     secrets: inherit
     with:
       repo: ${{ github.repository }}
-      tag: ${{ env.VERSION }}
-      container: 'ghcr.io/${{ github.repository }}:${{ env.VERSION }}'
+      tag: ${{ needs.set-version.outputs.version }}
+      container: 'ghcr.io/${{ github.repository }}:${{ needs.set-version.outputs.version }}'
       
   
