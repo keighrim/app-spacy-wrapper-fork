@@ -11,7 +11,7 @@ def appmetadata() -> AppMetadata:
         name="CLAMS wrapper for spaCy NLP",
         description="Apply spaCy NLP to all text documents in a MMIF file.",
         app_license="Apache 2.0",
-        identifier=f"spacy-wrapper",
+        identifier=f"https://apps.clams.ai/spacy-wrapper",
         url='https://github.com/clamsproject/app-spacy-nlp',
         analyzer_version=[l.strip().rsplit('==')[-1] for l in open('requirements.txt').readlines() if re.match(r'^spacy==', l)][0],
         analyzer_license='MIT',
